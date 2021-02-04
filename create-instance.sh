@@ -5,7 +5,7 @@
 # the security group opens Wireguard port (UDP 51820) & SSH
 aws ec2 run-instances \
     --image-id ami-0c5bd9c7ee43d6907 \
-    --instance-type t4g.nano \
+    --instance-type t4g.micro \
     --security-group-ids sg-09d86bf4a1e23dcac \
     --key-name admin-key-pair \
     --user-data file://setup-instance.sh \
